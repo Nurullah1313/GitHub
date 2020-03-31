@@ -1,0 +1,1529 @@
+CCS PCM C Compiler, Version 5.007, 61971               26-Eyl-19 11:33
+
+               Filename:   C:\Users\NURULLAH\Desktop\ccs c örnek\24c02 EEPROM\24c02.lst
+
+               ROM used:   1052 words (13%)
+                           Largest free fragment is 2048
+               RAM used:   10 (3%) at main() level
+                           15 (4%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  03
+0001:  MOVWF  0A
+0002:  GOTO   377
+0003:  NOP
+.................... #include <24c02.h> 
+.................... #include <16F877.h> 
+.................... //////// Standard Header file for the PIC16F877 device //////////////// 
+.................... #device PIC16F877 
+0004:  DATA 0C,05
+0005:  DATA 0D,15
+0006:  DATA 2A,15
+0007:  DATA 2A,15
+0008:  DATA 2A,15
+0009:  DATA 2A,15
+000A:  DATA 2A,15
+000B:  DATA 2A,15
+000C:  DATA 2A,15
+000D:  DATA 2A,15
+000E:  DATA 2A,15
+000F:  DATA 2A,15
+0010:  DATA 2A,15
+0011:  DATA 2A,15
+0012:  DATA 2A,15
+0013:  DATA 2A,15
+0014:  DATA 2A,15
+0015:  DATA 2A,15
+0016:  DATA 2A,15
+0017:  DATA 2A,15
+0018:  DATA 2A,15
+0019:  DATA 00,00
+001A:  RETLW  0A
+001B:  RETLW  0D
+001C:  RETLW  20
+001D:  RETLW  32
+001E:  RETLW  34
+001F:  RETLW  43
+0020:  RETLW  30
+0021:  RETLW  32
+0022:  RETLW  20
+0023:  RETLW  48
+0024:  RETLW  41
+0025:  RETLW  52
+0026:  RETLW  49
+0027:  RETLW  43
+0028:  RETLW  49
+0029:  RETLW  20
+002A:  RETLW  45
+002B:  RETLW  45
+002C:  RETLW  50
+002D:  RETLW  52
+002E:  RETLW  4F
+002F:  RETLW  4D
+0030:  RETLW  20
+0031:  RETLW  49
+0032:  RETLW  4C
+0033:  RETLW  45
+0034:  RETLW  20
+0035:  RETLW  42
+0036:  RETLW  DD
+0037:  RETLW  4C
+0038:  RETLW  47
+0039:  RETLW  DD
+003A:  RETLW  20
+003B:  RETLW  4F
+003C:  RETLW  4B
+003D:  RETLW  55
+003E:  RETLW  4D
+003F:  RETLW  41
+0040:  RETLW  20
+0041:  RETLW  59
+0042:  RETLW  41
+0043:  RETLW  5A
+0044:  RETLW  4D
+0045:  RETLW  41
+0046:  RETLW  00
+0047:  DATA 8A,06
+0048:  DATA 2A,15
+0049:  DATA 2A,15
+004A:  DATA 2A,15
+004B:  DATA 2A,15
+004C:  DATA 2A,15
+004D:  DATA 2A,15
+004E:  DATA 2A,15
+004F:  DATA 2A,15
+0050:  DATA 2A,15
+0051:  DATA 2A,15
+0052:  DATA 2A,15
+0053:  DATA 2A,15
+0054:  DATA 2A,15
+0055:  DATA 2A,15
+0056:  DATA 2A,15
+0057:  DATA 2A,15
+0058:  DATA 2A,15
+0059:  DATA 2A,15
+005A:  DATA 2A,15
+005B:  DATA 2A,00
+005C:  DATA 8A,06
+005D:  DATA 20,21
+005E:  DATA 69,39
+005F:  DATA A0,34
+0060:  DATA 73,36
+0061:  DATA E5,36
+0062:  DATA A0,39
+0063:  DATA E5,31
+0064:  DATA 69,37
+0065:  DATA 69,3D
+0066:  DATA 3E,00
+0067:  DATA 8A,06
+0068:  DATA CF,35
+0069:  DATA F5,36
+006A:  DATA 61,10
+006B:  DATA A8,27
+006C:  DATA 29,10
+006D:  DATA D9,30
+006E:  DATA FA,36
+006F:  DATA 61,10
+0070:  DATA A8,2C
+0071:  DATA 29,00
+0072:  RETLW  0A
+0073:  RETLW  0D
+0074:  RETLW  4F
+0075:  RETLW  6B
+0076:  RETLW  75
+0077:  RETLW  6D
+0078:  RETLW  61
+0079:  RETLW  6B
+007A:  RETLW  20
+007B:  RETLW  69
+007C:  RETLW  73
+007D:  RETLW  74
+007E:  RETLW  65
+007F:  RETLW  64
+0080:  RETLW  69
+0081:  RETLW  F0
+0082:  RETLW  69
+0083:  RETLW  6E
+0084:  RETLW  69
+0085:  RETLW  7A
+0086:  RETLW  20
+0087:  RETLW  61
+0088:  RETLW  64
+0089:  RETLW  72
+008A:  RETLW  65
+008B:  RETLW  73
+008C:  RETLW  69
+008D:  RETLW  20
+008E:  RETLW  67
+008F:  RETLW  69
+0090:  RETLW  72
+0091:  RETLW  69
+0092:  RETLW  6E
+0093:  RETLW  69
+0094:  RETLW  7A
+0095:  RETLW  3E
+0096:  RETLW  00
+0097:  DATA 8A,06
+0098:  DATA 20,22
+0099:  DATA E5,33
+009A:  DATA 65,39
+009B:  DATA 3D,1F
+009C:  DATA 25,2C
+009D:  DATA 00,00
+009E:  RETLW  0A
+009F:  RETLW  0D
+00A0:  RETLW  59
+00A1:  RETLW  61
+00A2:  RETLW  7A
+00A3:  RETLW  6D
+00A4:  RETLW  61
+00A5:  RETLW  6B
+00A6:  RETLW  20
+00A7:  RETLW  69
+00A8:  RETLW  73
+00A9:  RETLW  74
+00AA:  RETLW  65
+00AB:  RETLW  64
+00AC:  RETLW  69
+00AD:  RETLW  F0
+00AE:  RETLW  69
+00AF:  RETLW  6E
+00B0:  RETLW  69
+00B1:  RETLW  7A
+00B2:  RETLW  20
+00B3:  RETLW  61
+00B4:  RETLW  64
+00B5:  RETLW  72
+00B6:  RETLW  65
+00B7:  RETLW  73
+00B8:  RETLW  69
+00B9:  RETLW  20
+00BA:  RETLW  67
+00BB:  RETLW  69
+00BC:  RETLW  72
+00BD:  RETLW  69
+00BE:  RETLW  6E
+00BF:  RETLW  69
+00C0:  RETLW  7A
+00C1:  RETLW  3E
+00C2:  RETLW  00
+00C3:  RETLW  0A
+00C4:  RETLW  0D
+00C5:  RETLW  59
+00C6:  RETLW  61
+00C7:  RETLW  7A
+00C8:  RETLW  6D
+00C9:  RETLW  61
+00CA:  RETLW  6B
+00CB:  RETLW  20
+00CC:  RETLW  69
+00CD:  RETLW  73
+00CE:  RETLW  74
+00CF:  RETLW  65
+00D0:  RETLW  64
+00D1:  RETLW  69
+00D2:  RETLW  F0
+00D3:  RETLW  69
+00D4:  RETLW  6E
+00D5:  RETLW  69
+00D6:  RETLW  7A
+00D7:  RETLW  20
+00D8:  RETLW  62
+00D9:  RETLW  69
+00DA:  RETLW  6C
+00DB:  RETLW  67
+00DC:  RETLW  69
+00DD:  RETLW  79
+00DE:  RETLW  69
+00DF:  RETLW  20
+00E0:  RETLW  67
+00E1:  RETLW  69
+00E2:  RETLW  72
+00E3:  RETLW  69
+00E4:  RETLW  6E
+00E5:  RETLW  69
+00E6:  RETLW  7A
+00E7:  RETLW  3E
+00E8:  RETLW  00
+00E9:  MOVF   0B,W
+00EA:  MOVWF  24
+00EB:  BCF    0B.7
+00EC:  BSF    03.5
+00ED:  BSF    03.6
+00EE:  BSF    0C.7
+00EF:  BSF    0C.0
+00F0:  NOP
+00F1:  NOP
+00F2:  BCF    03.5
+00F3:  MOVF   0C,W
+00F4:  ANDLW  7F
+00F5:  BTFSC  03.2
+00F6:  GOTO   132
+00F7:  BCF    03.6
+00F8:  MOVWF  25
+00F9:  BSF    03.6
+00FA:  MOVF   0D,W
+00FB:  BCF    03.6
+00FC:  MOVWF  26
+00FD:  BSF    03.6
+00FE:  MOVF   0F,W
+00FF:  BCF    03.6
+0100:  MOVWF  27
+0101:  MOVF   25,W
+0102:  BTFSS  0C.4
+0103:  GOTO   102
+0104:  MOVWF  19
+0105:  MOVF   26,W
+0106:  BSF    03.6
+0107:  MOVWF  0D
+0108:  BCF    03.6
+0109:  MOVF   27,W
+010A:  BSF    03.6
+010B:  MOVWF  0F
+010C:  BSF    03.5
+010D:  BSF    0C.7
+010E:  BSF    0C.0
+010F:  NOP
+0110:  NOP
+0111:  BCF    03.5
+0112:  RLF    0C,W
+0113:  RLF    0E,W
+0114:  ANDLW  7F
+0115:  BTFSC  03.2
+0116:  GOTO   132
+0117:  BCF    03.6
+0118:  MOVWF  25
+0119:  BSF    03.6
+011A:  MOVF   0D,W
+011B:  BCF    03.6
+011C:  MOVWF  26
+011D:  BSF    03.6
+011E:  MOVF   0F,W
+011F:  BCF    03.6
+0120:  MOVWF  27
+0121:  MOVF   25,W
+0122:  BTFSS  0C.4
+0123:  GOTO   122
+0124:  MOVWF  19
+0125:  MOVF   26,W
+0126:  BSF    03.6
+0127:  MOVWF  0D
+0128:  BCF    03.6
+0129:  MOVF   27,W
+012A:  BSF    03.6
+012B:  MOVWF  0F
+012C:  INCF   0D,F
+012D:  BTFSC  03.2
+012E:  INCF   0F,F
+012F:  BCF    03.6
+0130:  GOTO   0EC
+0131:  BSF    03.6
+0132:  BCF    03.6
+0133:  BTFSC  24.7
+0134:  BSF    0B.7
+0135:  RETURN
+0136:  BSF    03.5
+0137:  BSF    03.6
+0138:  BSF    0C.7
+0139:  BSF    0C.0
+013A:  NOP
+013B:  NOP
+013C:  BCF    03.5
+013D:  MOVF   0C,F
+013E:  BTFSC  03.2
+013F:  GOTO   15A
+0140:  MOVF   0D,W
+0141:  BCF    03.6
+0142:  MOVWF  24
+0143:  BSF    03.6
+0144:  MOVF   0F,W
+0145:  BCF    03.6
+0146:  MOVWF  25
+0147:  BSF    03.6
+0148:  MOVF   0C,W
+0149:  BCF    03.6
+014A:  BTFSS  0C.4
+014B:  GOTO   14A
+014C:  MOVWF  19
+014D:  MOVF   24,W
+014E:  BSF    03.6
+014F:  MOVWF  0D
+0150:  BCF    03.6
+0151:  MOVF   25,W
+0152:  BSF    03.6
+0153:  MOVWF  0F
+0154:  INCF   0D,F
+0155:  BTFSC  03.2
+0156:  INCF   0F,F
+0157:  BCF    03.6
+0158:  GOTO   136
+0159:  BSF    03.6
+015A:  BCF    03.6
+015B:  RETURN
+*
+02BB:  MOVF   0B,W
+02BC:  MOVWF  26
+02BD:  BCF    0B.7
+02BE:  BSF    03.5
+02BF:  BSF    03.6
+02C0:  BSF    0C.7
+02C1:  BSF    0C.0
+02C2:  NOP
+02C3:  NOP
+02C4:  BTFSC  03.0
+02C5:  GOTO   2EE
+02C6:  BCF    03.5
+02C7:  MOVF   0C,W
+02C8:  ANDLW  7F
+02C9:  BCF    03.6
+02CA:  MOVWF  27
+02CB:  BSF    03.6
+02CC:  MOVF   0D,W
+02CD:  BCF    03.6
+02CE:  MOVWF  28
+02CF:  BSF    03.6
+02D0:  MOVF   0F,W
+02D1:  BCF    03.6
+02D2:  MOVWF  29
+02D3:  MOVF   27,W
+02D4:  BTFSS  0C.4
+02D5:  GOTO   2D4
+02D6:  MOVWF  19
+02D7:  MOVF   28,W
+02D8:  BSF    03.6
+02D9:  MOVWF  0D
+02DA:  BCF    03.6
+02DB:  MOVF   29,W
+02DC:  BSF    03.6
+02DD:  MOVWF  0F
+02DE:  BSF    03.5
+02DF:  BSF    0C.7
+02E0:  BSF    0C.0
+02E1:  NOP
+02E2:  NOP
+02E3:  BCF    03.5
+02E4:  BCF    03.6
+02E5:  DECFSZ 25,F
+02E6:  GOTO   2E8
+02E7:  GOTO   2EB
+02E8:  BSF    03.5
+02E9:  BSF    03.6
+02EA:  GOTO   2EE
+02EB:  GOTO   30E
+02EC:  BSF    03.5
+02ED:  BSF    03.6
+02EE:  BCF    03.5
+02EF:  RLF    0C,W
+02F0:  RLF    0E,W
+02F1:  ANDLW  7F
+02F2:  BCF    03.6
+02F3:  MOVWF  27
+02F4:  BSF    03.6
+02F5:  MOVF   0D,W
+02F6:  BCF    03.6
+02F7:  MOVWF  28
+02F8:  BSF    03.6
+02F9:  MOVF   0F,W
+02FA:  BCF    03.6
+02FB:  MOVWF  29
+02FC:  MOVF   27,W
+02FD:  BTFSS  0C.4
+02FE:  GOTO   2FD
+02FF:  MOVWF  19
+0300:  MOVF   28,W
+0301:  BSF    03.6
+0302:  MOVWF  0D
+0303:  BCF    03.6
+0304:  MOVF   29,W
+0305:  BSF    03.6
+0306:  MOVWF  0F
+0307:  INCF   0D,F
+0308:  BTFSC  03.2
+0309:  INCF   0F,F
+030A:  BCF    03.0
+030B:  BCF    03.6
+030C:  DECFSZ 25,F
+030D:  GOTO   2BE
+030E:  BTFSC  26.7
+030F:  BSF    0B.7
+0310:  BCF    0A.3
+0311:  BCF    0A.4
+0312:  GOTO   3F8 (RETURN)
+0313:  BTFSC  26.7
+0314:  GOTO   326
+0315:  MOVLW  0F
+0316:  MOVWF  77
+0317:  SWAPF  25,W
+0318:  ANDWF  77,F
+0319:  MOVLW  0A
+031A:  SUBWF  77,W
+031B:  BTFSC  03.0
+031C:  GOTO   320
+031D:  MOVLW  30
+031E:  ADDWF  77,F
+031F:  GOTO   322
+0320:  MOVF   26,W
+0321:  ADDWF  77,F
+0322:  MOVF   77,W
+0323:  BTFSS  0C.4
+0324:  GOTO   323
+0325:  MOVWF  19
+0326:  MOVLW  0F
+0327:  ANDWF  25,F
+0328:  MOVLW  0A
+0329:  SUBWF  25,W
+032A:  BTFSC  03.0
+032B:  GOTO   32E
+032C:  MOVLW  30
+032D:  GOTO   330
+032E:  BCF    26.7
+032F:  MOVF   26,W
+0330:  ADDWF  25,F
+0331:  MOVF   25,W
+0332:  BTFSS  0C.4
+0333:  GOTO   332
+0334:  MOVWF  19
+0335:  BCF    0A.3
+0336:  BCF    0A.4
+0337:  GOTO   3FD (RETURN)
+....................  
+.................... #list 
+....................  
+.................... #device ADC=10 
+....................  
+.................... #FUSES NOWDT                    //No Watch Dog Timer 
+.................... #FUSES NOBROWNOUT               //No brownout reset 
+.................... #FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O 
+....................  
+.................... #use delay(crystal=4000000) 
+....................  
+....................  
+....................  
+.................... #use rs232 (baud=9600,xmit=pin_c6,rcv=pin_c7,stop=1,parity=N)//rs232 ayarlarý yapýlýyor baud=9600 hýzýnda iletiþim kuracak xmit=pin_c6 TX bacaðý pin_c6 ya baðlý  
+.................... //rcv=pin_c7 RX bacaðý pin_c7 ye baðlý stop=1 stop biti 1 olacvaðý belirtilmiþ parity=N eþlik biti olmayacak  
+.................... #use i2c(master,sda=pin_c4,scl=pin_c3,slow=100000)//i2c ayarlarý yapýlýyor entegrenin master olacaðý belirtilmiþ (slave(köle) de olabilirdi) sda=pin_c4 sda pin i pin_c4'e baðlý 
+.................... //scl=pin_c3 scl pin'i pin_c3 ' e baðlý slow=100000 iletiþim hýzýnýn yavaþ olarak 100Kbit/s olarak belirlendi 
+....................  
+.................... #include <input.c>//toupper() fonksiyonu ile küçük harfleri büyük harfe çevirdik  
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////                                                                   //// 
+.................... ////                             input.c                               //// 
+.................... ////                                                                   //// 
+.................... //// Routines for reading user input over an RS232 stream.  User input //// 
+.................... //// is in ASCII form and converted to requested binary or float       //// 
+.................... //// format.                                                           //// 
+.................... ////                                                                   //// 
+.................... //// If STREAM_SERIAL_INPUT is defined, these routines will read from  //// 
+.................... //// that serial stream.  If not, uses the last #use rs232().          //// 
+.................... ////                                                                   //// 
+.................... //// Some of these routines are not available unless you #include      //// 
+.................... //// string.h and stdlib.h                                             //// 
+.................... ////                                                                   //// 
+.................... ////  int8 gethex() - read 2 char hex value from serial                //// 
+.................... ////                                                                   //// 
+.................... ////  get_string(s, max) - read max chars from serial and save to s    //// 
+.................... ////                                                                   //// 
+.................... ////  get_stringEdit(s, max) - similar to get_string(), but first it   //// 
+.................... ////     displays current string in s, allowing you to edit it.        //// 
+.................... ////                                                                   //// 
+.................... ////  int8 = get_Int8() -                                              //// 
+.................... ////  int16 = get_Int16() -                                            //// 
+.................... ////  int32 = get_Int32() -                                            //// 
+.................... ////  float = get_float() -                                            //// 
+.................... ////     Read value from serial.                                       //// 
+.................... ////                                                                   //// 
+.................... ////  int8 = get_Int8Edit(old) -                                       //// 
+.................... ////  int16 = get_Int16Edit(old) -                                     //// 
+.................... ////  int32 = get_Int32Edit(old) -                                     //// 
+.................... ////  float = get_floatEdit(old) -                                     //// 
+.................... ////     Similar to get_Int*() routines documented above, but first    //// 
+.................... ////     it displays old value allowing you to edit it.                //// 
+.................... ////                                                                   //// 
+.................... ////  int = get_int() -                                                //// 
+.................... ////  long = get_long() -                                              //// 
+.................... ////     Simlar to get_Int*() documented above, but return 'int' and   //// 
+.................... ////     'long' datatypes.  The size of these datatypes depends on     //// 
+.................... ////     the PIC architecture and compiler configuration.              //// 
+.................... ////                                                                   //// 
+.................... ////  int = get_intEdit(old) -                                         //// 
+.................... ////  long = get_longEdit(old) -                                       //// 
+.................... ////     Similar to get_int() and get_long() documented above,         //// 
+.................... ////     but first it displays old value allowing you to edit it.      //// 
+.................... ////                                                                   //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996,2012 Custom Computer Services           //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+....................  
+.................... #ifndef __INPUT_C__ 
+.................... #define __INPUT_C__ 
+....................  
+.................... #include <ctype.h> 
+.................... //////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996,2003 Custom Computer Services            //// 
+.................... //// This source code may only be used by licensed users of the CCS C   //// 
+.................... //// compiler.  This source code may only be distributed to other       //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction  //// 
+.................... //// or distribution is permitted without written permission.           //// 
+.................... //// Derivative programs created using this software in object code     //// 
+.................... //// form are not restricted in any way.                                //// 
+.................... //////////////////////////////////////////////////////////////////////////// 
+....................  
+.................... #ifndef _CTYPE 
+.................... #define _CTYPE 
+....................  
+.................... #define islower(x)  isamong(x,"abcdefghijklmnopqrstuvwxyz") 
+.................... #define isupper(x)  isamong(x,"ABCDEFGHIJKLMNOPQRSTUVWXYZ") 
+.................... #define isalnum(x)  isamong(x,"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz") 
+.................... #define isalpha(x)  isamong(x,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz") 
+.................... #define isdigit(x)  isamong(x,"0123456789") 
+.................... #define isspace(x)  ((x)==' ') 
+.................... #define isxdigit(x) isamong(x,"0123456789ABCDEFabcdef") 
+.................... #define iscntrl(x)  ((x)<' ') 
+.................... #define isprint(x)  ((x)>=' ') 
+.................... #define isgraph(x)  ((x)>' ') 
+.................... #define ispunct(x)  (((x)>' ')&&!isalnum(x)) 
+....................  
+.................... #endif 
+....................  
+....................  
+....................  
+.................... #if defined(STREAM_SERIAL_INPUT) 
+....................    #define InputKbhit()    kbhit(STREAM_SERIAL_INPUT) 
+....................    #define InputPutc(c)    fputc(c, STREAM_SERIAL_INPUT) 
+....................    #define InputGetc()     fgetc(STREAM_SERIAL_INPUT) 
+.................... #else 
+....................    #define InputKbhit()    kbhit() 
+....................    #define InputPutc(c)    putc(c) 
+....................    #define InputGetc()     getc() 
+.................... #endif 
+....................  
+.................... unsigned int8 gethex1() { 
+....................    char digit; 
+....................  
+....................    digit = InputGetc(); 
+*
+015C:  BTFSS  0C.5
+015D:  GOTO   15C
+015E:  MOVF   1A,W
+015F:  MOVWF  26
+....................  
+....................    InputPutc(digit); 
+0160:  MOVF   26,W
+0161:  BTFSS  0C.4
+0162:  GOTO   161
+0163:  MOVWF  19
+....................  
+....................    if(digit<='9') 
+0164:  MOVF   26,W
+0165:  SUBLW  39
+0166:  BTFSS  03.0
+0167:  GOTO   16D
+....................      return(digit-'0'); 
+0168:  MOVLW  30
+0169:  SUBWF  26,W
+016A:  MOVWF  78
+016B:  GOTO   17C
+016C:  GOTO   17C
+....................    else 
+....................      return((toupper(digit)-'A')+10); 
+016D:  MOVF   26,W
+016E:  SUBLW  60
+016F:  BTFSC  03.0
+0170:  GOTO   178
+0171:  MOVF   26,W
+0172:  SUBLW  7A
+0173:  BTFSS  03.0
+0174:  GOTO   178
+0175:  MOVF   26,W
+0176:  ANDLW  DF
+0177:  GOTO   179
+0178:  MOVF   26,W
+0179:  ADDLW  BF
+017A:  ADDLW  0A
+017B:  MOVWF  78
+017C:  RETURN
+.................... } 
+....................  
+.................... unsigned int8 gethex() { 
+....................    unsigned int8 lo,hi; 
+....................  
+....................    hi = gethex1(); 
+017D:  CALL   15C
+017E:  MOVF   78,W
+017F:  MOVWF  25
+....................    lo = gethex1(); 
+0180:  CALL   15C
+0181:  MOVF   78,W
+0182:  MOVWF  24
+....................    if(lo==0xdd) 
+0183:  MOVF   24,W
+0184:  SUBLW  DD
+0185:  BTFSS  03.2
+0186:  GOTO   18B
+....................      return(hi); 
+0187:  MOVF   25,W
+0188:  MOVWF  78
+0189:  GOTO   192
+018A:  GOTO   192
+....................    else 
+....................      return( hi*16+lo ); 
+018B:  SWAPF  25,W
+018C:  MOVWF  77
+018D:  MOVLW  F0
+018E:  ANDWF  77,F
+018F:  MOVF   77,W
+0190:  ADDWF  24,W
+0191:  MOVWF  78
+0192:  RETURN
+.................... } 
+....................  
+.................... void get_string(char* s, unsigned int8 max) { 
+....................    unsigned int8 len; 
+....................    char c; 
+....................  
+....................    max-=2; 
+....................    len=0; 
+....................    do { 
+....................      c=InputGetc(); 
+....................      if(c==8) {  // Backspace 
+....................         if(len>0) { 
+....................           len--; 
+....................           InputPutc(c); 
+....................           InputPutc(' '); 
+....................           InputPutc(c); 
+....................         } 
+....................      } else if ((c>=' ')&&(c<='~')) 
+....................        if(len<=max) { 
+....................          s[len++]=c; 
+....................          InputPutc(c); 
+....................        } 
+....................    } while(c!=13); 
+....................    s[len]=0; 
+.................... } 
+....................  
+.................... #ifdef _STRING 
+.................... void get_stringEdit(char* s, unsigned int8 max) { 
+....................    unsigned int8 len; 
+....................    char c; 
+....................  
+....................    len = strlen(s); 
+....................  
+....................    if (len) 
+....................    { 
+....................      #if defined(STREAM_SERIAL_INPUT) 
+....................       fprintf(STREAM_SERIAL_INPUT, "%s", s); 
+....................      #else 
+....................       printf("%s", s); 
+....................      #endif 
+....................    } 
+....................  
+....................    max-=2; 
+....................  
+....................    do { 
+....................      c=InputGetc(); 
+....................      if(c==8) {  // Backspace 
+....................         if(len>0) { 
+....................           len--; 
+....................           InputPutc(c); 
+....................           InputPutc(' '); 
+....................           InputPutc(c); 
+....................         } 
+....................      } else if ((c>=' ')&&(c<='~')) 
+....................        if(len<=max) { 
+....................          s[len++]=c; 
+....................          InputPutc(c); 
+....................        } 
+....................    } while(c!=13); 
+....................    s[len]=0; 
+.................... } 
+.................... #endif 
+....................  
+.................... // stdlib.h is required for the ato_ conversions 
+.................... // in the following functions 
+.................... #ifdef _STDLIB 
+.................... signed int8 get_Int8(void) 
+.................... { 
+....................   char s[5]; 
+....................   signed int8 i; 
+....................  
+....................   get_string(s, sizeof(s)); 
+....................  
+....................   i=atoi(s); 
+....................   return(i); 
+.................... } 
+....................  
+.................... #ifdef _STRING 
+.................... signed int8 get_Int8Edit(signed int8 old) 
+.................... { 
+....................   char s[5]; 
+....................   signed int8 i; 
+....................  
+....................   sprintf(s, "%d", old); 
+....................   get_stringEdit(s, sizeof(s)); 
+....................  
+....................   i=atoi(s); 
+....................   return(i); 
+.................... } 
+.................... #endif 
+....................  
+.................... signed int16 get_Int16(void) 
+.................... { 
+....................   char s[7]; 
+....................   signed int16 l; 
+....................  
+....................   get_string(s, sizeof(s)); 
+....................   l=atol(s); 
+....................   return(l); 
+.................... } 
+....................  
+.................... #ifdef _STRING 
+.................... signed int16 get_Int16Edit(signed int16 old) 
+.................... { 
+....................   char s[7]; 
+....................   signed int16 l; 
+....................  
+....................   sprintf(s, "%ld", old); 
+....................  
+....................   get_stringEdit(s, sizeof(s)); 
+....................   l=atol(s); 
+....................   return(l); 
+.................... } 
+.................... #endif 
+....................  
+.................... signed int32 get_Int32(void) 
+.................... { 
+....................   char s[12]; 
+....................   signed int32 l; 
+....................  
+....................   get_string(s, sizeof(s)); 
+....................   l=atoi32(s); 
+....................   return(l); 
+.................... } 
+....................  
+.................... #ifdef _STRING 
+.................... signed int32 get_Int32Edit(signed int32 old) 
+.................... { 
+....................   char s[12]; 
+....................   signed int32 l; 
+....................  
+....................   sprintf(s, "%ld", old); 
+....................  
+....................   get_stringEdit(s, sizeof(s)); 
+....................   l=atoi32(s); 
+....................   return(l); 
+.................... } 
+.................... #endif 
+....................  
+.................... float get_float() { 
+....................   char s[20]; 
+....................   float f; 
+....................  
+....................   get_string(s, 20); 
+....................   f = atof(s); 
+....................   return(f); 
+.................... } 
+....................  
+.................... #ifdef _STRING 
+.................... float get_floatEdit(float old) { 
+....................   char s[20]; 
+....................   float f; 
+....................  
+....................   sprintf(s, "%f", old); 
+....................  
+....................   get_string(s, 20); 
+....................   f = atof(s); 
+....................   return(f); 
+.................... } 
+.................... #endif 
+....................  
+.................... #if defined(__PCD__) 
+....................    #define get_int()       get_Int16() 
+....................    #define get_intEdit()   get_Int16Edit() 
+....................    #define get_long()      get_Int32() 
+....................    #define get_longEdit()  get_Int32Edit() 
+.................... #else 
+....................    #define get_int()       get_Int8() 
+....................    #define get_intEdit()   get_Int8Edit() 
+....................    #define get_long()      get_Int16() 
+....................    #define get_longEdit()  get_Int16Edit() 
+.................... #endif 
+....................  
+.................... #endif   //_STDLIB 
+....................  
+.................... #endif   //__INPUT_C__ 
+....................  
+.................... #include <2402.c>//24C02 eeprom hazýr c kütüphanesini kullandýk  
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////   Library for a MicroChip 24LC02B configured for a x8 org         //// 
+.................... ////                                                                   //// 
+.................... ////   init_ext_eeprom();    Call before the other functions are used  //// 
+.................... ////                                                                   //// 
+.................... ////   write_ext_eeprom(a, d);  Write the byte d to the address a      //// 
+.................... ////                                                                   //// 
+.................... ////   d = read_ext_eeprom(a);  Read the byte d from the address a     //// 
+.................... ////                                                                   //// 
+.................... ////   b = ext_eeprom_ready();  Returns TRUE if the eeprom is ready    //// 
+.................... ////                            to receive opcodes                     //// 
+.................... ////                                                                   //// 
+.................... ////   The main program may define EEPROM_SDA                          //// 
+.................... ////   and EEPROM_SCL to override the defaults below.                  //// 
+.................... ////                                                                   //// 
+.................... ////                            Pin Layout                             //// 
+.................... ////   -----------------------------------------------------------     //// 
+.................... ////   |                                                         |     //// 
+.................... ////   | 1: NC   Not Connected | 8: VCC   +5V                    |     //// 
+.................... ////   |                       |                                 |     //// 
+.................... ////   | 2: NC   Not Connected | 7: WP    GND                    |     //// 
+.................... ////   |                       |                                 |     //// 
+.................... ////   | 3: NC   Not Connected | 6: SCL   EEPROM_SCL and Pull-Up |     //// 
+.................... ////   |                       |                                 |     //// 
+.................... ////   | 4: VSS  GND           | 5: SDA   EEPROM_SDA and Pull-Up |     //// 
+.................... ////   -----------------------------------------------------------     //// 
+.................... ////                                                                   //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2003 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #ifndef EEPROM_SDA 
+....................  
+.................... #define EEPROM_SDA  PIN_C4 
+.................... #define EEPROM_SCL  PIN_C3 
+....................  
+.................... #endif 
+....................  
+....................  
+.................... #use i2c(master, sda=EEPROM_SDA, scl=EEPROM_SCL) 
+0193:  MOVLW  08
+0194:  MOVWF  78
+0195:  NOP
+0196:  BCF    07.3
+0197:  BCF    20.3
+0198:  MOVF   20,W
+0199:  BSF    03.5
+019A:  MOVWF  07
+019B:  NOP
+019C:  BCF    03.5
+019D:  RLF    27,F
+019E:  BCF    07.4
+019F:  BTFSS  03.0
+01A0:  GOTO   1A7
+01A1:  BSF    20.4
+01A2:  MOVF   20,W
+01A3:  BSF    03.5
+01A4:  MOVWF  07
+01A5:  GOTO   1AB
+01A6:  BCF    03.5
+01A7:  BCF    20.4
+01A8:  MOVF   20,W
+01A9:  BSF    03.5
+01AA:  MOVWF  07
+01AB:  NOP
+01AC:  BCF    03.5
+01AD:  BSF    20.3
+01AE:  MOVF   20,W
+01AF:  BSF    03.5
+01B0:  MOVWF  07
+01B1:  BCF    03.5
+01B2:  BTFSS  07.3
+01B3:  GOTO   1B2
+01B4:  DECFSZ 78,F
+01B5:  GOTO   195
+01B6:  NOP
+01B7:  BCF    07.3
+01B8:  BCF    20.3
+01B9:  MOVF   20,W
+01BA:  BSF    03.5
+01BB:  MOVWF  07
+01BC:  NOP
+01BD:  BCF    03.5
+01BE:  BSF    20.4
+01BF:  MOVF   20,W
+01C0:  BSF    03.5
+01C1:  MOVWF  07
+01C2:  NOP
+01C3:  NOP
+01C4:  BCF    03.5
+01C5:  BSF    20.3
+01C6:  MOVF   20,W
+01C7:  BSF    03.5
+01C8:  MOVWF  07
+01C9:  BCF    03.5
+01CA:  BTFSS  07.3
+01CB:  GOTO   1CA
+01CC:  CLRF   78
+01CD:  NOP
+01CE:  BTFSC  07.4
+01CF:  BSF    78.0
+01D0:  BCF    07.3
+01D1:  BCF    20.3
+01D2:  MOVF   20,W
+01D3:  BSF    03.5
+01D4:  MOVWF  07
+01D5:  BCF    03.5
+01D6:  BCF    07.4
+01D7:  BCF    20.4
+01D8:  MOVF   20,W
+01D9:  BSF    03.5
+01DA:  MOVWF  07
+01DB:  BCF    03.5
+01DC:  RETURN
+*
+025A:  MOVLW  08
+025B:  MOVWF  27
+025C:  MOVF   77,W
+025D:  MOVWF  28
+025E:  BSF    20.4
+025F:  MOVF   20,W
+0260:  BSF    03.5
+0261:  MOVWF  07
+0262:  NOP
+0263:  BCF    03.5
+0264:  BSF    20.3
+0265:  MOVF   20,W
+0266:  BSF    03.5
+0267:  MOVWF  07
+0268:  BCF    03.5
+0269:  BTFSS  07.3
+026A:  GOTO   269
+026B:  BTFSC  07.4
+026C:  BSF    03.0
+026D:  BTFSS  07.4
+026E:  BCF    03.0
+026F:  RLF    78,F
+0270:  NOP
+0271:  BCF    20.3
+0272:  MOVF   20,W
+0273:  BSF    03.5
+0274:  MOVWF  07
+0275:  BCF    03.5
+0276:  BCF    07.3
+0277:  DECFSZ 27,F
+0278:  GOTO   25E
+0279:  BSF    20.4
+027A:  MOVF   20,W
+027B:  BSF    03.5
+027C:  MOVWF  07
+027D:  NOP
+027E:  BCF    03.5
+027F:  BCF    07.4
+0280:  MOVF   28,W
+0281:  BTFSC  03.2
+0282:  GOTO   288
+0283:  BCF    20.4
+0284:  MOVF   20,W
+0285:  BSF    03.5
+0286:  MOVWF  07
+0287:  BCF    03.5
+0288:  NOP
+0289:  BSF    20.3
+028A:  MOVF   20,W
+028B:  BSF    03.5
+028C:  MOVWF  07
+028D:  BCF    03.5
+028E:  BTFSS  07.3
+028F:  GOTO   28E
+0290:  NOP
+0291:  BCF    07.3
+0292:  BCF    20.3
+0293:  MOVF   20,W
+0294:  BSF    03.5
+0295:  MOVWF  07
+0296:  NOP
+0297:  BCF    03.5
+0298:  BCF    07.4
+0299:  BCF    20.4
+029A:  MOVF   20,W
+029B:  BSF    03.5
+029C:  MOVWF  07
+....................  
+.................... #define EEPROM_ADDRESS BYTE 
+.................... #define EEPROM_SIZE    256 
+....................  
+.................... void init_ext_eeprom() { 
+....................    output_float(EEPROM_SCL); 
+....................    output_float(EEPROM_SDA); 
+.................... } 
+....................  
+.................... BOOLEAN ext_eeprom_ready() { 
+....................    int1 ack; 
+....................    i2c_start();            // If the write command is acknowledged, 
+*
+01DD:  BSF    20.4
+01DE:  MOVF   20,W
+01DF:  BSF    03.5
+01E0:  MOVWF  07
+01E1:  NOP
+01E2:  BCF    03.5
+01E3:  BSF    20.3
+01E4:  MOVF   20,W
+01E5:  BSF    03.5
+01E6:  MOVWF  07
+01E7:  NOP
+01E8:  BCF    03.5
+01E9:  BCF    07.4
+01EA:  BCF    20.4
+01EB:  MOVF   20,W
+01EC:  BSF    03.5
+01ED:  MOVWF  07
+01EE:  NOP
+01EF:  BCF    03.5
+01F0:  BCF    07.3
+01F1:  BCF    20.3
+01F2:  MOVF   20,W
+01F3:  BSF    03.5
+01F4:  MOVWF  07
+....................    ack = i2c_write(0xa0);  // then the device is ready. 
+01F5:  MOVLW  A0
+01F6:  BCF    03.5
+01F7:  MOVWF  27
+01F8:  CALL   193
+01F9:  MOVF   78,W
+01FA:  BCF    26.0
+01FB:  BTFSC  78.0
+01FC:  BSF    26.0
+....................    i2c_stop(); 
+01FD:  BCF    20.4
+01FE:  MOVF   20,W
+01FF:  BSF    03.5
+0200:  MOVWF  07
+0201:  NOP
+0202:  BCF    03.5
+0203:  BSF    20.3
+0204:  MOVF   20,W
+0205:  BSF    03.5
+0206:  MOVWF  07
+0207:  BCF    03.5
+0208:  BTFSS  07.3
+0209:  GOTO   208
+020A:  NOP
+020B:  GOTO   20C
+020C:  NOP
+020D:  BSF    20.4
+020E:  MOVF   20,W
+020F:  BSF    03.5
+0210:  MOVWF  07
+0211:  NOP
+....................    return !ack; 
+0212:  MOVLW  00
+0213:  BCF    03.5
+0214:  BTFSS  26.0
+0215:  MOVLW  01
+0216:  MOVWF  78
+0217:  RETURN
+.................... } 
+....................  
+.................... void write_ext_eeprom(BYTE address, BYTE data) { 
+....................    while(!ext_eeprom_ready()); 
+*
+0338:  CALL   1DD
+0339:  MOVF   78,F
+033A:  BTFSC  03.2
+033B:  GOTO   338
+....................    i2c_start(); 
+033C:  BSF    20.4
+033D:  MOVF   20,W
+033E:  BSF    03.5
+033F:  MOVWF  07
+0340:  NOP
+0341:  BCF    03.5
+0342:  BSF    20.3
+0343:  MOVF   20,W
+0344:  BSF    03.5
+0345:  MOVWF  07
+0346:  NOP
+0347:  BCF    03.5
+0348:  BCF    07.4
+0349:  BCF    20.4
+034A:  MOVF   20,W
+034B:  BSF    03.5
+034C:  MOVWF  07
+034D:  NOP
+034E:  BCF    03.5
+034F:  BCF    07.3
+0350:  BCF    20.3
+0351:  MOVF   20,W
+0352:  BSF    03.5
+0353:  MOVWF  07
+....................    i2c_write(0xa0); 
+0354:  MOVLW  A0
+0355:  BCF    03.5
+0356:  MOVWF  27
+0357:  CALL   193
+....................    i2c_write(address); 
+0358:  MOVF   24,W
+0359:  MOVWF  27
+035A:  CALL   193
+....................    i2c_write(data); 
+035B:  MOVF   25,W
+035C:  MOVWF  27
+035D:  CALL   193
+....................    i2c_stop(); 
+035E:  BCF    20.4
+035F:  MOVF   20,W
+0360:  BSF    03.5
+0361:  MOVWF  07
+0362:  NOP
+0363:  BCF    03.5
+0364:  BSF    20.3
+0365:  MOVF   20,W
+0366:  BSF    03.5
+0367:  MOVWF  07
+0368:  BCF    03.5
+0369:  BTFSS  07.3
+036A:  GOTO   369
+036B:  NOP
+036C:  GOTO   36D
+036D:  NOP
+036E:  BSF    20.4
+036F:  MOVF   20,W
+0370:  BSF    03.5
+0371:  MOVWF  07
+0372:  NOP
+0373:  BCF    03.5
+0374:  BCF    0A.3
+0375:  BCF    0A.4
+0376:  GOTO   41A (RETURN)
+.................... } 
+....................  
+....................  
+.................... BYTE read_ext_eeprom(BYTE address) { 
+....................    BYTE data; 
+....................  
+....................    while(!ext_eeprom_ready()); 
+*
+0218:  CALL   1DD
+0219:  MOVF   78,F
+021A:  BTFSC  03.2
+021B:  GOTO   218
+....................    i2c_start(); 
+021C:  BSF    20.4
+021D:  MOVF   20,W
+021E:  BSF    03.5
+021F:  MOVWF  07
+0220:  NOP
+0221:  BCF    03.5
+0222:  BSF    20.3
+0223:  MOVF   20,W
+0224:  BSF    03.5
+0225:  MOVWF  07
+0226:  NOP
+0227:  BCF    03.5
+0228:  BCF    07.4
+0229:  BCF    20.4
+022A:  MOVF   20,W
+022B:  BSF    03.5
+022C:  MOVWF  07
+022D:  NOP
+022E:  BCF    03.5
+022F:  BCF    07.3
+0230:  BCF    20.3
+0231:  MOVF   20,W
+0232:  BSF    03.5
+0233:  MOVWF  07
+....................    i2c_write(0xa0); 
+0234:  MOVLW  A0
+0235:  BCF    03.5
+0236:  MOVWF  27
+0237:  CALL   193
+....................    i2c_write(address); 
+0238:  MOVF   24,W
+0239:  MOVWF  27
+023A:  CALL   193
+....................    i2c_start(); 
+023B:  BSF    20.4
+023C:  MOVF   20,W
+023D:  BSF    03.5
+023E:  MOVWF  07
+023F:  NOP
+0240:  BCF    03.5
+0241:  BSF    20.3
+0242:  MOVF   20,W
+0243:  BSF    03.5
+0244:  MOVWF  07
+0245:  NOP
+0246:  BCF    03.5
+0247:  BTFSS  07.3
+0248:  GOTO   247
+0249:  BCF    07.4
+024A:  BCF    20.4
+024B:  MOVF   20,W
+024C:  BSF    03.5
+024D:  MOVWF  07
+024E:  NOP
+024F:  BCF    03.5
+0250:  BCF    07.3
+0251:  BCF    20.3
+0252:  MOVF   20,W
+0253:  BSF    03.5
+0254:  MOVWF  07
+....................    i2c_write(0xa1); 
+0255:  MOVLW  A1
+0256:  BCF    03.5
+0257:  MOVWF  27
+0258:  CALL   193
+....................    data=i2c_read(0); 
+0259:  CLRF   77
+*
+029D:  MOVF   78,W
+029E:  BCF    03.5
+029F:  MOVWF  25
+....................    i2c_stop(); 
+02A0:  BCF    20.4
+02A1:  MOVF   20,W
+02A2:  BSF    03.5
+02A3:  MOVWF  07
+02A4:  NOP
+02A5:  BCF    03.5
+02A6:  BSF    20.3
+02A7:  MOVF   20,W
+02A8:  BSF    03.5
+02A9:  MOVWF  07
+02AA:  BCF    03.5
+02AB:  BTFSS  07.3
+02AC:  GOTO   2AB
+02AD:  NOP
+02AE:  GOTO   2AF
+02AF:  NOP
+02B0:  BSF    20.4
+02B1:  MOVF   20,W
+02B2:  BSF    03.5
+02B3:  MOVWF  07
+02B4:  NOP
+....................    return(data); 
+02B5:  BCF    03.5
+02B6:  MOVF   25,W
+02B7:  MOVWF  78
+02B8:  BCF    0A.3
+02B9:  BCF    0A.4
+02BA:  GOTO   3EC (RETURN)
+.................... } 
+....................  
+....................  
+.................... byte veri,adres;//byte cinsinden veri ve adres diye iki deðiþken tanýmladýk 
+.................... char islem;//islem adýnda char cinsinden bir deððiþken tanýmladýk 
+....................  
+....................  
+.................... void main(){//ana fonksiyon 
+*
+0377:  MOVLW  19
+0378:  BSF    03.5
+0379:  MOVWF  19
+037A:  MOVLW  A6
+037B:  MOVWF  18
+037C:  MOVLW  90
+037D:  BCF    03.5
+037E:  MOVWF  18
+037F:  MOVLW  FF
+0380:  MOVWF  20
+0381:  BSF    03.5
+0382:  BSF    1F.0
+0383:  BSF    1F.1
+0384:  BSF    1F.2
+0385:  BCF    1F.3
+0386:  BCF    03.7
+0387:  MOVLW  1F
+0388:  ANDWF  03,F
+....................     
+....................    setup_psp(psp_disabled); 
+0389:  BCF    09.4
+....................    setup_timer_1(t1_disabled); 
+038A:  BCF    03.5
+038B:  CLRF   10
+....................    setup_timer_2(t2_disabled,0,1); 
+038C:  MOVLW  00
+038D:  MOVWF  78
+038E:  MOVWF  12
+038F:  MOVLW  00
+0390:  BSF    03.5
+0391:  MOVWF  12
+....................    setup_adc_ports(no_analogs); 
+0392:  BSF    1F.0
+0393:  BSF    1F.1
+0394:  BSF    1F.2
+0395:  BCF    1F.3
+....................    setup_adc(adc_off); 
+0396:  BCF    03.5
+0397:  BCF    1F.0
+....................    setup_ccp1(ccp_off); 
+0398:  MOVLW  F0
+0399:  ANDWF  17,F
+....................    setup_ccp2(ccp_off); 
+039A:  ANDWF  1D,F
+....................     
+....................    printf("\f\n\r***************************************");//virtual terminal ekranýnda güzel bir görünüm için yýldýzlardan bir çizgi oluþturuyoruz 
+039B:  MOVLW  04
+039C:  BSF    03.6
+039D:  MOVWF  0D
+039E:  MOVLW  00
+039F:  MOVWF  0F
+03A0:  BCF    03.6
+03A1:  CALL   0E9
+....................    printf("\n\r 24C02 HARICI EEPROM ILE BÝLGÝ OKUMA YAZMA");//sanal terminalde baþlýk atýyoruz 
+03A2:  MOVLW  1A
+03A3:  BSF    03.6
+03A4:  MOVWF  0D
+03A5:  MOVLW  00
+03A6:  MOVWF  0F
+03A7:  BCF    03.6
+03A8:  CALL   136
+....................    printf("\n\r***************************************");//virtual terminal ekranýnda güzel bir görünüm için yýldýzlardan bir çizgi oluþturuyoruz 
+03A9:  MOVLW  47
+03AA:  BSF    03.6
+03AB:  MOVWF  0D
+03AC:  MOVLW  00
+03AD:  MOVWF  0F
+03AE:  BCF    03.6
+03AF:  CALL   0E9
+....................    printf("\n\r Bir islem seciniz>");//kullanýcýdan bir iþlem seçmesini istiyoruz 
+03B0:  MOVLW  5C
+03B1:  BSF    03.6
+03B2:  MOVWF  0D
+03B3:  MOVLW  00
+03B4:  MOVWF  0F
+03B5:  BCF    03.6
+03B6:  CALL   0E9
+....................     
+....................    while(TRUE){//sonsuz döngü 
+....................     
+....................    do{//do while baþlangýcý içindeki iþlemi en az birkere gerçekleþtirir ve koþula baðlý olarak tekrardan baþa döner veya dönmez 
+....................       printf("\n\rOkuma (O) Yazma (Y)");//ekrana basmasý gereken tuþlarý gösterip bunlarýn ne iþe yaradýðýný belirtiyoruz 
+03B7:  MOVLW  67
+03B8:  BSF    03.6
+03B9:  MOVWF  0D
+03BA:  MOVLW  00
+03BB:  MOVWF  0F
+03BC:  BCF    03.6
+03BD:  CALL   0E9
+....................       islem=getc();//kullanýcýdan bilgi alýyorus 
+03BE:  BTFSS  0C.5
+03BF:  GOTO   3BE
+03C0:  MOVF   1A,W
+03C1:  MOVWF  23
+....................       islem=toupper(islem);//bu fonksiyonla girdiði harf küçükse büyüðe çeviriyoruz 
+03C2:  MOVF   23,W
+03C3:  SUBLW  60
+03C4:  BTFSC  03.0
+03C5:  GOTO   3CD
+03C6:  MOVF   23,W
+03C7:  SUBLW  7A
+03C8:  BTFSS  03.0
+03C9:  GOTO   3CD
+03CA:  MOVF   23,W
+03CB:  ANDLW  DF
+03CC:  GOTO   3CE
+03CD:  MOVF   23,W
+03CE:  MOVWF  23
+....................       putc(islem);//girdiði karakteri ekrana basýp neye bastýðýný gösteriyoruz 
+03CF:  MOVF   23,W
+03D0:  BTFSS  0C.4
+03D1:  GOTO   3D0
+03D2:  MOVWF  19
+....................    }while((islem!='O') && (islem!='Y'));//eðer bastýðý karakterler O veya Y deðil ise tekrar bir karakter girmesini istiyoruz 
+03D3:  MOVF   23,W
+03D4:  SUBLW  4F
+03D5:  BTFSC  03.2
+03D6:  GOTO   3DB
+03D7:  MOVF   23,W
+03D8:  SUBLW  59
+03D9:  BTFSS  03.2
+03DA:  GOTO   3B7
+....................     
+....................    if(islem=='O'){//eðer girilen karakteer 'O' ise 
+03DB:  MOVF   23,W
+03DC:  SUBLW  4F
+03DD:  BTFSS  03.2
+03DE:  GOTO   3FD
+....................        
+....................       printf("\n\rOkumak istediðiniz adresi giriniz>");//okunmak istenen adresi girmesini istiyoruz 
+03DF:  MOVLW  72
+03E0:  BSF    03.6
+03E1:  MOVWF  0D
+03E2:  MOVLW  00
+03E3:  MOVWF  0F
+03E4:  BCF    03.6
+03E5:  CALL   136
+....................       adres=gethex();//verilen deðeri adresi deðiþkenine hex olarak atýyoruz 
+03E6:  CALL   17D
+03E7:  MOVF   78,W
+03E8:  MOVWF  22
+....................       printf("\n\r Deger=>%X",read_ext_eeprom(adres));//verilen adresteki deðeri ekrana basýyoruz 
+03E9:  MOVF   22,W
+03EA:  MOVWF  24
+03EB:  GOTO   218
+03EC:  MOVF   78,W
+03ED:  MOVWF  24
+03EE:  MOVLW  97
+03EF:  BSF    03.6
+03F0:  MOVWF  0D
+03F1:  MOVLW  00
+03F2:  MOVWF  0F
+03F3:  BCF    03.0
+03F4:  MOVLW  0A
+03F5:  BCF    03.6
+03F6:  MOVWF  25
+03F7:  GOTO   2BB
+03F8:  MOVF   24,W
+03F9:  MOVWF  25
+03FA:  MOVLW  37
+03FB:  MOVWF  26
+03FC:  GOTO   313
+....................     
+....................    } 
+....................     
+....................    if(islem=='Y'){//eðer girilen karakter 'Y' ise  
+03FD:  MOVF   23,W
+03FE:  SUBLW  59
+03FF:  BTFSS  03.2
+0400:  GOTO   41A
+....................       printf("\n\rYazmak istediðiniz adresi giriniz>");//yazmak istediði adresi istiyoruz 
+0401:  MOVLW  9E
+0402:  BSF    03.6
+0403:  MOVWF  0D
+0404:  MOVLW  00
+0405:  MOVWF  0F
+0406:  BCF    03.6
+0407:  CALL   136
+....................       adres=gethex();//girilen deðeri hex olarak adres deðiþkenine atýyoruz 
+0408:  CALL   17D
+0409:  MOVF   78,W
+040A:  MOVWF  22
+....................       printf("\n\rYazmak istediðiniz bilgiyi giriniz>");//þimdide girilen adresi ne yazmak istediðini soruyoruz 
+040B:  MOVLW  C3
+040C:  BSF    03.6
+040D:  MOVWF  0D
+040E:  MOVLW  00
+040F:  MOVWF  0F
+0410:  BCF    03.6
+0411:  CALL   136
+....................       veri=gethex();//girilen veriyi veri deðiþkenine hex olarak atýyoruz 
+0412:  CALL   17D
+0413:  MOVF   78,W
+0414:  MOVWF  21
+....................       write_ext_eeprom(adres,veri);//girilen adrese veri deðiþkenini yazýyoruz 
+0415:  MOVF   22,W
+0416:  MOVWF  24
+0417:  MOVF   21,W
+0418:  MOVWF  25
+0419:  GOTO   338
+....................    } 
+041A:  GOTO   3B7
+....................    } 
+....................  
+.................... } 
+041B:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F31   XT NOWDT PUT NOBROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

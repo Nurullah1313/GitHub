@@ -1,0 +1,68 @@
+#include <24c02.h>
+
+#use rs232(baud=9600,xmit=pin_c6,rcv=pin_c7,parity=N,stop=1)
+
+#use i2c(master,sda=pin_c4,scl=pin_c3,slow=100000)
+
+#include <input.c>
+#include <2402.c>
+
+byte veri,adres;
+char islem;
+
+
+void main()
+{
+   setup_psp(psp_disabled);
+   setup_timer_1(t1_disabled);
+   setup_timer_2(t2_disabled);
+   setup_adc_ports(no_analogs);
+   setup_adc(adc_off);
+   setup_ccp1(ccp_off);
+   setup_ccp2(ccp_off);
+   setup_comparator(NC_NC_NC_NC);
+   setup_vref(FALSE);
+   
+   printf("\n\r***********************************************************");
+   printf("\n\r 24C02 HARÝCÝ EEPROM BÝLGÝ OKUMA YAZMA");
+   printf("\n\r***********************************************************");
+   printf("\n\n\rBir islem seçiniz");
+   
+   while(TRUE)
+   { 
+      do{
+         printf("OKUMA='O' veya YAZMA='Y'");
+         islem=getc();
+         islem=toupper(islem);
+         putc(islem);
+      } while(islem!='O') && (islem!='Y');
+      
+      if(islem=='O'){
+      
+         printf("\n\rOkumak istediðiniz adresi giriniz:");
+         adres=gethex();
+         printf("\n\rDeger=%X",read_ext_eeprom(adres));
+                  
+      }
+      
+      if(islem=='Y'){
+         
+         printf("\n\rBilgi yazmak istediðiniz adresi giriniz:");
+         adres=gethex();
+         printf("\n\rBilgiyi giriniz");
+         veri=gethex();
+         write_ext_eeprom(adres,veri);
+               
+      }
+      
+      
+   }
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+#include <24c02.h>
+#use rs232 (baud=9600,xmit=pin_c6,rcv=pin_c7,stop=1,parity=N)//rs232 ayarlarý yapýlýyor baud=9600 hýzýnda iletiþim kuracak xmit=pin_c6 TX bacaðý pin_c6 ya baðlý 
+//rcv=pin_c7 RX bacaðý pin_c7 ye baðlý stop=1 stop biti 1 olacvaðý belirtilmiþ parity=N eþlik biti olmayacak 
+#use i2c(master,sda=pin_c4,scl=pin_c3,slow=100000)//i2c ayarlarý yapýlýyor entegrenin master olacaðý belirtilmiþ (slave(köle) de olabilirdi) sda=pin_c4 sda pin i pin_c4'e baðlý
+//scl=pin_c3 scl pin'i pin_c3 ' e baðlý slow=100000 iletiþim hýzýnýn yavaþ olarak 100Kbit/s olarak belirlendi
+
+#include <input.c>//toupper() fonksiyonu ile küçük harfleri büyük harfe çevirdik 
+#include <2402.c>//24C02 eeprom hazýr c kütüphanesini kullandýk 
+
+byte veri,adres;//byte cinsinden veri ve adres diye iki deðiþken tanýmladýk
+char islem;//islem adýnda char cinsinden bir deððiþken tanýmladýk
+
+
+void main(){//ana fonksiyon
+   
+   setup_psp(psp_disabled);
+   setup_timer_1(t1_disabled);
+   setup_timer_2(t2_disabled,0,1);
+   setup_adc_ports(no_analogs);
+   setup_adc(adc_off);
+   setup_ccp1(ccp_off);
+   setup_ccp2(ccp_off);
+   
+  /* printf("\f\n\r***************************************");//virtual terminal ekranýnda güzel bir görünüm için yýldýzlardan bir çizgi oluþturuyoruz
+   printf("\n\r 24C02 HARICI EEPROM ILE BÝLGÝ OKUMA YAZMA");//sanal terminalde baþlýk atýyoruz
+   printf("\n\r***************************************");//virtual terminal ekranýnda güzel bir görünüm için yýldýzlardan bir çizgi oluþturuyoruz
+   printf("\n\r Bir islem seciniz>");//kullanýcýdan bir iþlem seçmesini istiyoruz
+   
+   while(TRUE){//sonsuz döngü
+   
+   do{//do while baþlangýcý içindeki iþlemi en az birkere gerçekleþtirir ve koþula baðlý olarak tekrardan baþa döner veya dönmez
+      printf("\n\rOkuma (O) Yazma (Y)");//ekrana basmasý gereken tuþlarý gösterip bunlarýn ne iþe yaradýðýný belirtiyoruz
+      islem=getc();//kullanýcýdan bilgi alýyorus
+      islem=toupper(islem);//bu fonksiyonla girdiði harf küçükse büyüðe çeviriyoruz
+      putc(islem);//girdiði karakteri ekrana basýp neye bastýðýný gösteriyoruz
+   }while((islem!='O') && (islem!='Y'));//eðer bastýðý karakterler O veya Y deðil ise tekrar bir karakter girmesini istiyoruz
+   
+   if(islem=='O'){//eðer girilen karakteer 'O' ise
+      
+      printf("\n\rOkumak istediðiniz adresi giriniz>");//okunmak istenen adresi girmesini istiyoruz
+      adres=gethex();//verilen deðeri adresi deðiþkenine hex olarak atýyoruz
+      printf("\n\r Deger=>%X",read_ext_eeprom(adres));//verilen adresteki deðeri ekrana basýyoruz
+   
+   }
+   
+   if(islem=='Y'){//eðer girilen karakter 'Y' ise 
+      printf("\n\rYazmak istediðiniz adresi giriniz>");//yazmak istediði adresi istiyoruz
+      adres=gethex();//girilen deðeri hex olarak adres deðiþkenine atýyoruz
+      printf("\n\rYazmak istediðiniz bilgiyi giriniz>");//þimdide girilen adresi ne yazmak istediðini soruyoruz
+      veri=gethex();//girilen veriyi veri deðiþkenine hex olarak atýyoruz
+      write_ext_eeprom(adres,veri);//girilen adrese veri deðiþkenini yazýyoruz
+   }
+   }*/
+   printf("nurullah");
+
+}

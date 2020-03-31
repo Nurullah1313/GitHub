@@ -1,0 +1,109 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     veri
+022     adres
+023     islem
+024     read_ext_eeprom.address
+024     write_ext_eeprom.address
+024     gethex.lo
+024     MAIN.@SCRATCH1
+024     @PSTRINGC7_9600_62_63.@SCRATCH1
+024     @PSTRINGC_9600_62_63.@SCRATCH1
+025     @PSTRINGCN7_9600_62_63.P1
+025     read_ext_eeprom.data
+025     gethex.hi
+025     @PRINTF_X_9600_62_63.P1
+025     write_ext_eeprom.data
+025     @PSTRINGC7_9600_62_63.@SCRATCH2
+025     @PSTRINGC_9600_62_63.@SCRATCH2
+026     @I2C_READ_2.P1
+026.0   ext_eeprom_ready.ack
+026     gethex1.digit
+026     @PRINTF_X_9600_62_63.P1
+026     gethex.@SCRATCH1
+026     @PSTRINGC7_9600_62_63.@SCRATCH3
+026     @PSTRINGCN7_9600_62_63.@SCRATCH1
+027     @I2C_WRITE_2.P1
+027     gethex1.@SCRATCH1
+027     @I2C_READ_2.@SCRATCH1
+027     @PSTRINGC7_9600_62_63.@SCRATCH4
+027     @PSTRINGCN7_9600_62_63.@SCRATCH2
+028     @I2C_READ_2.@SCRATCH2
+028     @PSTRINGCN7_9600_62_63.@SCRATCH3
+029     @PSTRINGCN7_9600_62_63.@SCRATCH4
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const649.call
+00001A  @const651.call
+000047  @const653.call
+00005C  @const654.call
+000067  @const655.call
+000072  @const656.call
+000097  @const657.call
+00009E  @const663.call
+0000C3  @const664.call
+0000E9  @PSTRINGC7_9600_62_63
+000136  @PSTRINGC_9600_62_63
+00015C  gethex1
+00017D  gethex
+000193  @I2C_WRITE_2
+0001DD  ext_eeprom_ready
+000218  read_ext_eeprom
+00025A  @I2C_READ_2
+0002BB  @PSTRINGCN7_9600_62_63
+000313  @PRINTF_X_9600_62_63
+000338  write_ext_eeprom
+000377  MAIN
+000377  @cinit1
+000386  @cinit2
+
+Project Directory:
+    C:\Users\NURULLAH\Desktop\ccs c örnek\24c02 EEPROM\
+
+Project Files:
+    24c02.c                                                 [26-Eyl-19 11:25  CRC=645963D9]
+    24c02.h                                                 [26-Tem-19 09:21  CRC=64D0046D]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877.h [21-Haz-13 16:04  CRC=A355A189]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\input.c [01-May-13 13:38  CRC=8C3C8665]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-Oca-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\2402.c  [23-Tem-03 14:53  CRC=0E465FD3]
+
+Source signature=42675179
+
+Units:
+    24c02 (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   24c02.xsym
+    Errors:      24c02.err
+    Ext Symbols: 24c02.esym
+    INHX8:       24c02.hex
+    Symbols:     24c02.sym
+    List:        24c02.lst
+    Debug/COFF:  24c02.cof
+    Project:     24c02.ccspjt
+    Call Tree:   24c02.tre
+    Statistics:  24c02.STA

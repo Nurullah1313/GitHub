@@ -1,0 +1,8 @@
+#include <24c02.h>
+#use rs232 (baud=9600,xmit=pin_c6,rcv=pin_c7,stop=1,parity=N)
+#use i2c(master,sda=pin_c4,scl=pin_c3,slow=100000)
+
+void main(){
+
+
+}
